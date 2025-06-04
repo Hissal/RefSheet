@@ -4,6 +4,15 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <AssemblyName>LH.RefSheet</AssemblyName>
+        <RootNamespace>LH.RefSheet</RootNamespace>
+        <IsPackable>false</IsPackable>
+        <PackageId>LH.RefSheet</PackageId>
+        <Version>0.1.0</Version>
+        <Title>RefSheet</Title>
+        <Authors>Lassi Harjaluoma</Authors>
+        <Description>Reference and value sheets for shared storage</Description>
+        <Company>Lassi Harjaluoma</Company>
     </PropertyGroup>
 
 </Project>

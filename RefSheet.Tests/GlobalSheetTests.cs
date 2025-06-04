@@ -1,8 +1,6 @@
-using System;
-using NUnit.Framework;
-using RefSheet;
+using LH.RefSheet;
 
-namespace RefSheetTests;
+namespace RefSheet.Tests;
 
 [TestFixture]
 public class GlobalSheetTests {

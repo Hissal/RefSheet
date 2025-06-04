@@ -1,4 +1,4 @@
-﻿namespace RefSheet;
+﻿namespace LH.RefSheet;
 
 public static class GlobalSheet {
     static IRefSheet? s_refSheet;

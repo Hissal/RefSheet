@@ -1,6 +1,6 @@
-﻿using RefSheet;
+﻿using LH.RefSheet;
 
-namespace RefSheetTests;
+namespace RefSheet.Tests;
 
 public class ValueSheetTests {
     [Test]

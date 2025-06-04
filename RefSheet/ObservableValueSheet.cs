@@ -1,4 +1,4 @@
-﻿namespace RefSheet;
+﻿namespace LH.RefSheet;
 
 public interface IObservableValueSheet : IValueSheet {
     IDisposable OnWrite<TValue>(IObserver<TValue> observer) where TValue : struct;

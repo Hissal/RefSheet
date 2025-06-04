@@ -1,4 +1,4 @@
-﻿namespace RefSheet;
+﻿namespace LH.RefSheet;
 
 public interface IValueSheet {
     TValue Read<TValue>() where TValue : struct;

@@ -1,4 +1,4 @@
-﻿namespace RefSheet;
+﻿namespace LH.RefSheet;
 
 public interface IRefSheet {
     TRef Get<TRef>() where TRef : class;

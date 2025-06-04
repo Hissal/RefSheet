@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefSheet", "RefSheet\RefSheet.csproj", "{31306268-5888-45A7-A35A-49E2114513A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefSheetTests", "RefSheetTests\RefSheetTests.csproj", "{A493EAB2-4CE6-4867-8E56-BF1DD4FD572A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefSheet.Tests", "RefSheet.Tests\RefSheet.Tests.csproj", "{A493EAB2-4CE6-4867-8E56-BF1DD4FD572A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

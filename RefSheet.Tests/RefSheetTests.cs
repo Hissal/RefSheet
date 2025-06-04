@@ -1,7 +1,6 @@
-using NUnit.Framework;
-using RefSheet;
+using LH.RefSheet;
 
-namespace RefSheetTests;
+namespace RefSheet.Tests;
 
 [TestFixture]
 public class RefSheetTests {
@@ -11,7 +10,7 @@ public class RefSheetTests {
 
     [Test]
     public void SetAndGet_UnkeyedReference_Works() {
-        var sheet = new RefSheet.RefSheet();
+        var sheet = new LH.RefSheet.RefSheet();
         var dummy = new Dummy { Value = 42 };
         sheet.Set(dummy);
         Assert.That(sheet.Get<Dummy>(), Is.EqualTo(dummy));
@@ -19,7 +18,7 @@ public class RefSheetTests {
 
     [Test]
     public void SetAndGet_KeyedReference_Works() {
-        var sheet = new RefSheet.RefSheet();
+        var sheet = new LH.RefSheet.RefSheet();
         var dummy = new Dummy { Value = 99 };
         sheet.Set("foo", dummy);
         Assert.That(sheet.Get<string, Dummy>("foo"), Is.EqualTo(dummy));
@@ -27,7 +26,7 @@ public class RefSheetTests {
 
     [Test]
     public void HasRef_ReturnsCorrectly() {
-        var sheet = new RefSheet.RefSheet();
+        var sheet = new LH.RefSheet.RefSheet();
         Assert.That(sheet.HasRef<Dummy>(), Is.False);
         sheet.Set(new Dummy());
         Assert.That(sheet.HasRef<Dummy>(), Is.True);
@@ -35,7 +34,7 @@ public class RefSheetTests {
 
     [Test]
     public void HasRef_Keyed_ReturnsCorrectly() {
-        var sheet = new RefSheet.RefSheet();
+        var sheet = new LH.RefSheet.RefSheet();
         Assert.That(sheet.HasRef<string, Dummy>("bar"), Is.False);
         sheet.Set("bar", new Dummy());
         Assert.That(sheet.HasRef<string, Dummy>("bar"), Is.True);
@@ -43,19 +42,19 @@ public class RefSheetTests {
 
     [Test]
     public void Get_UnsetReference_Throws() {
-        var sheet = new RefSheet.RefSheet();
+        var sheet = new LH.RefSheet.RefSheet();
         Assert.Throws<KeyNotFoundException>(() => sheet.Get<Dummy>());
     }
 
     [Test]
     public void Get_KeyedUnsetReference_Throws() {
-        var sheet = new RefSheet.RefSheet();
+        var sheet = new LH.RefSheet.RefSheet();
         Assert.Throws<NullReferenceException>(() => sheet.Get<string, Dummy>("baz"));
     }
 
     [Test]
     public void Set_NullReference_RemovesReference() {
-        var sheet = new RefSheet.RefSheet();
+        var sheet = new LH.RefSheet.RefSheet();
         var dummy = new Dummy();
         sheet.Set(dummy);
         Assert.That(sheet.HasRef<Dummy>(), Is.True);
@@ -65,7 +64,7 @@ public class RefSheetTests {
 
     [Test]
     public void Set_NullKeyedReference_RemovesReference() {
-        var sheet = new RefSheet.RefSheet();
+        var sheet = new LH.RefSheet.RefSheet();
         var dummy = new Dummy();
         sheet.Set("x", dummy);
         Assert.That(sheet.HasRef<string, Dummy>("x"), Is.True);
@@ -75,7 +74,7 @@ public class RefSheetTests {
 
     [Test]
     public void Extensions_TryGet_Works() {
-        var sheet = new RefSheet.RefSheet();
+        var sheet = new LH.RefSheet.RefSheet();
         var dummy = new Dummy();
         sheet.Set(dummy);
         Assert.Multiple(() => {
@@ -86,7 +85,7 @@ public class RefSheetTests {
 
     [Test]
     public void Extensions_TryGet_Keyed_Works() {
-        var sheet = new RefSheet.RefSheet();
+        var sheet = new LH.RefSheet.RefSheet();
         var dummy = new Dummy();
         sheet.Set("y", dummy);
         Assert.Multiple(() => {
@@ -97,7 +96,7 @@ public class RefSheetTests {
 
     [Test]
     public void Extensions_GetRefOrNull_Works() {
-        var sheet = new RefSheet.RefSheet();
+        var sheet = new LH.RefSheet.RefSheet();
         Assert.That(sheet.GetRefOrNull<Dummy>(), Is.Null);
         var dummy = new Dummy();
         sheet.Set(dummy);
@@ -106,7 +105,7 @@ public class RefSheetTests {
 
     [Test]
     public void Extensions_GetRefOrNull_Keyed_Works() {
-        var sheet = new RefSheet.RefSheet();
+        var sheet = new LH.RefSheet.RefSheet();
         Assert.That(sheet.GetRefOrNull<string, Dummy>("z"), Is.Null);
         var dummy = new Dummy();
         sheet.Set("z", dummy);

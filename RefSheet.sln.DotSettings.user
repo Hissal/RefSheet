@@ -4,10 +4,5 @@
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AKeyValuePair_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003Fab3652e3e0c1780ce9b7fbb6938dbec71c093d375262e61691b468390c520_003FKeyValuePair_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AValueType_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003F3bf9ddbdca76837aff182b568ea612623121c0901c6c73de35e5c9b14a81a_003FValueType_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0d88a97a_002D58e6_002D49f3_002Da519_002D147aee2dfbe0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ValueSheetTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::A493EAB2-4CE6-4867-8E56-BF1DD4FD572A::net9.0::RefSheetTests.ValueSheetTests&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::A493EAB2-4CE6-4867-8E56-BF1DD4FD572A::net9.0::RefSheetTests.RefSheetTests&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::A493EAB2-4CE6-4867-8E56-BF1DD4FD572A::net9.0::RefSheetTests.ObservableValueSheetTests&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::A493EAB2-4CE6-4867-8E56-BF1DD4FD572A::net9.0::RefSheetTests.GlobalSheetTests&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
+  &lt;Project Location="C:\Users\hissa\RiderProjects\RefSheet\RefSheet.Tests" Presentation="&amp;lt;RefSheet.Tests&amp;gt;" /&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
